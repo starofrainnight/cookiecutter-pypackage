@@ -6,4 +6,5 @@ cookiecutter>=1.4.0
 pytest-cookies==0.2.0
 watchdog==0.8.3
 alabaster==0.7.8
-license
+license>=0.1a2
+jinja2-pimport>=0.1.0
