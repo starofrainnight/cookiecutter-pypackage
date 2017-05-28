@@ -20,13 +20,9 @@ test_requirements = [
     # TODO: put package test requirements here
 ]
 
-{%- set license_classifiers = {
-    'MIT license': 'License :: OSI Approved :: MIT License',
-    'BSD license': 'License :: OSI Approved :: BSD License',
-    'ISC license': 'License :: OSI Approved :: ISC License (ISCL)',
-    'Apache Software License 2.0': 'License :: OSI Approved :: Apache Software License',
-    'GNU General Public License v3': 'License :: OSI Approved :: GNU General Public License v3 (GPLv3)'
-} %}
+{%- if cookiecutter.open_source_license != "Not open source" %}
+    {%- set license = ('license' | pimport).find(cookiecutter.open_source_license) %}
+{%- endif %}
 
 setup(
     name='{{ cookiecutter.project_slug }}',
@@ -50,16 +46,16 @@ setup(
     {%- endif %}
     include_package_data=True,
     install_requires=requirements,
-{%- if cookiecutter.open_source_license in license_classifiers %}
-    license="{{ cookiecutter.open_source_license }}",
+{%- if license is defined %}
+    license="{{ license.python.split(':')[-1].strip() }}",
 {%- endif %}
     zip_safe=False,
     keywords='{{ cookiecutter.project_slug }}',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
-{%- if cookiecutter.open_source_license in license_classifiers %}
-        '{{ license_classifiers[cookiecutter.open_source_license] }}',
+{%- if license is defined %}
+        '{{ license.python }}',
 {%- endif %}
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
