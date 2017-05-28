@@ -1,4 +1,4 @@
-{%- if cookiecutter.open_source_license != "Not open source" %}
-    {%- set license = ('license' | pimport).find(cookiecutter.open_source_license) -%}
+{%- if cookiecutter.license != "Not open source" %}
+    {%- set license = ('license' | pimport).find(cookiecutter.license) -%}
     {{ license.render(name=cookiecutter.full_name, email=cookiecutter.email) }}
 {%- endif %}
