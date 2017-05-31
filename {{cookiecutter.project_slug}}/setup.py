@@ -3,11 +3,8 @@
 
 from setuptools import setup
 
-with open('README.rst') as readme_file:
-    readme = readme_file.read()
-
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
+with open('README.rst') as readme_file, open('HISTORY.rst') as history_file:
+    long_description = (readme_file.read() + "\n\n" + history_file.read())
 
 requirements = [
 {%- if cookiecutter.command_line_interface|lower == 'click' %}
@@ -28,7 +25,7 @@ setup(
     name='{{ cookiecutter.project_slug }}',
     version='{{ cookiecutter.version }}',
     description="{{ cookiecutter.project_short_description }}",
-    long_description=readme + '\n\n' + history,
+    long_description=long_description,
     author="{{ cookiecutter.full_name.replace('\"', '\\\"') }}",
     author_email='{{ cookiecutter.email }}',
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
