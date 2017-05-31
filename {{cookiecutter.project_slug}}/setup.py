@@ -10,9 +10,9 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    {%- if cookiecutter.command_line_interface|lower == 'click' %}
+{%- if cookiecutter.command_line_interface|lower == 'click' %}
     'Click>=6.0',
-    {%- endif %}
+{%- endif %}
     # TODO: put package requirements here
 ]
 
@@ -37,13 +37,13 @@ setup(
     ],
     package_dir={'{{ cookiecutter.project_slug }}':
                  '{{ cookiecutter.project_slug }}'},
-    {%- if 'no' not in cookiecutter.command_line_interface|lower %}
+{%- if 'no' not in cookiecutter.command_line_interface|lower %}
     entry_points={
         'console_scripts': [
             '{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}.__main__:main'
         ]
     },
-    {%- endif %}
+{%- endif %}
     include_package_data=True,
     install_requires=requirements,
 {%- if license is defined %}
