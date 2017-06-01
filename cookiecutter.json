@@ -26,5 +26,6 @@
     "GPL-3.0",
     "GPL-3.0+",
     "Not open source"],
+  "_template_url": "https://github.com/audreyr/cookiecutter-pypackage",
   "_extensions": ["jinja2_pimport.PImportExtension"]
 }
