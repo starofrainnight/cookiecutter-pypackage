@@ -21,7 +21,7 @@ from click.testing import CliRunner
 
 from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
 {%- if cookiecutter.command_line_interface|lower == 'click' %}
-from {{ cookiecutter.project_slug }} import cli
+from {{ cookiecutter.project_slug }}.__main__ import main
 {%- endif %}
 
 
@@ -45,12 +45,10 @@ def test_content(response):
 {%- if cookiecutter.command_line_interface|lower == 'click' %}
 def test_command_line_interface():
     runner = CliRunner()
-    result = runner.invoke(cli.main)
-    assert result.exit_code == 0
-    assert '{{ cookiecutter.project_slug }}.__main__.main' in result.output
-    help_result = runner.invoke(cli.main, ['--help'])
+    result = runner.invoke(main)
+    assert result.exit_code == 2
+    help_result = runner.invoke(main, ['--help'])
     assert help_result.exit_code == 0
-    assert '--help  Show this message and exit.' in help_result.output
 
 {%- endif %}
 {% else %}
@@ -67,12 +65,10 @@ class Test{{ cookiecutter.project_slug|title }}(unittest.TestCase):
 {% if cookiecutter.command_line_interface|lower == 'click' %}
     def test_command_line_interface(self):
         runner = CliRunner()
-        result = runner.invoke(cli.main)
-        assert result.exit_code == 0
-        assert '{{ cookiecutter.project_slug }}.__main__.main' in result.output
-        help_result = runner.invoke(cli.main, ['--help'])
+        result = runner.invoke(main)
+        assert result.exit_code == 2
+        help_result = runner.invoke(main, ['--help'])
         assert help_result.exit_code == 0
-        assert '--help  Show this message and exit.' in help_result.output
 
 {%- endif %}
 {%- endif %}
