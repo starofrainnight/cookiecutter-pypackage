@@ -7,7 +7,7 @@ with open('README.rst') as readme_file, open('HISTORY.rst') as history_file:
     long_description = (readme_file.read() + "\n\n" + history_file.read())
 
 requirements = [
-    {%- if cookiecutter.command_line_interface|lower == 'click' % }
+    {%- if cookiecutter.command_line_interface|lower == 'click' %}
     'click>=6.0',
     {%- endif % }
     # TODO: put package requirements here
