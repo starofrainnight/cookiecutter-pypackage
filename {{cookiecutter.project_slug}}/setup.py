@@ -9,7 +9,7 @@ with open('README.rst') as readme_file, open('HISTORY.rst') as history_file:
 requirements = [
     {%- if cookiecutter.command_line_interface|lower == 'click' %}
     'click>=6.0',
-    {%- endif % }
+    {%- endif %}
     # TODO: put package requirements here
 ]
 
@@ -17,9 +17,9 @@ test_requirements = [
     # TODO: put package test requirements here
 ]
 
-{%- if cookiecutter.license != "Not open source" % }
-    {%- set license = ('license' | pimport).find(cookiecutter.license) % }
-{%- endif % }
+{%- if cookiecutter.license != "Not open source" %}
+    {%- set license = ('license' | pimport).find(cookiecutter.license) %}
+{%- endif %}
 
 setup(
     name='{{ cookiecutter.project_slug }}',
