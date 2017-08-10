@@ -41,7 +41,7 @@ def test_command_line_interface():
     """Test the CLI."""
     runner = CliRunner()
     result = runner.invoke(main)
-    assert result.exit_code == 2
+    assert result.exit_code == 0
     help_result = runner.invoke(main, ['--help'])
     assert help_result.exit_code == 0
     assert '--help  Show this message and exit.' in help_result.output
@@ -66,7 +66,7 @@ class Test{{ cookiecutter.project_slug|title }}(unittest.TestCase):
         """Test the CLI."""
         runner = CliRunner()
         result = runner.invoke(main)
-        assert result.exit_code == 2
+        assert result.exit_code == 0
         help_result = runner.invoke(main, ['--help'])
         assert help_result.exit_code == 0
         assert '--help  Show this message and exit.' in help_result.output
