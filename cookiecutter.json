@@ -26,6 +26,6 @@
     "GPL-3.0",
     "GPL-3.0+",
     "Not open source"],
-  "_template_url": "https://github.com/starofrainnight/cookiecutter-pypackage",
+  "_template_url": "https://github.com/starofrainnight/rtpl-pypackage",
   "_extensions": ["jinja2_pimport.PImportExtension"]
 }

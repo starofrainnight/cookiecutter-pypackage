@@ -2,13 +2,13 @@
 Cookiecutter PyPackage
 ======================
 
-.. image:: https://pyup.io/repos/github/starofrainnight/cookiecutter-pypackage/shield.svg
-     :target: https://pyup.io/repos/github/starofrainnight/cookiecutter-pypackage/
+.. image:: https://pyup.io/repos/github/starofrainnight/rtpl-pypackage/shield.svg
+     :target: https://pyup.io/repos/github/starofrainnight/rtpl-pypackage/
      :alt: Updates
 
 Cookiecutter_ template for a Python package.
 
-* GitHub repo: https://github.com/starofrainnight/cookiecutter-pypackage/
+* GitHub repo: https://github.com/starofrainnight/rtpl-pypackage/
 * Documentation: https://cookiecutter-pypackage.readthedocs.io/
 * Free software: BSD license
 
@@ -30,14 +30,14 @@ Build Status
 
 Linux:
 
-.. image:: https://img.shields.io/travis/starofrainnight/cookiecutter-pypackage.svg
-    :target: https://travis-ci.org/starofrainnight/cookiecutter-pypackage
+.. image:: https://img.shields.io/travis/starofrainnight/rtpl-pypackage.svg
+    :target: https://travis-ci.org/starofrainnight/rtpl-pypackage
     :alt: Linux build status on Travis CI
 
 Windows:
 
-.. image:: https://ci.appveyor.com/api/projects/status/github/starofrainnight/cookiecutter-pypackage?branch=master&svg=true
-    :target: https://ci.appveyor.com/project/starofrainnight/cookiecutter-pypackage/branch/master
+.. image:: https://ci.appveyor.com/api/projects/status/github/starofrainnight/rtpl-pypackage?branch=master&svg=true
+    :target: https://ci.appveyor.com/project/starofrainnight/rtpl-pypackage/branch/master
     :alt: Windows build status on Appveyor
 
 Quickstart
@@ -50,7 +50,7 @@ Cookiecutter 1.4.0 or higher)::
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/starofrainnight/cookiecutter-pypackage.git
+    cookiecutter https://github.com/starofrainnight/rtpl-pypackage.git
 
 Then:
 

@@ -9,7 +9,7 @@ setup(
     author='Hong-She Liang',
     license='BSD',
     author_email='starofrainnight@gmail.com',
-    url='https://github.com/starofrainnight/cookiecutter-pypackage',
+    url='https://github.com/starofrainnight/rtpl-pypackage',
     keywords=['cookiecutter', 'template', 'package', ],
     classifiers=[
         'Development Status :: 4 - Beta',
