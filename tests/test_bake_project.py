@@ -172,15 +172,6 @@ def test_using_pytest(cookies):
         run_inside_dir('python setup.py test', str(result.project)) == 0
 
 
-def test_not_using_pytest(cookies):
-    with bake_in_temp_dir(cookies) as result:
-        assert result.project.isdir()
-        test_file_path = result.project.join('tests/test_pythonboilerplate.py')
-        lines = test_file_path.readlines()
-        assert "import unittest" in ''.join(lines)
-        assert "import pytest" not in ''.join(lines)
-
-
 def test_bake_with_no_console_script(cookies):
     context = {'command_line_interface': "No command-line interface"}
     result = cookies.bake(extra_context=context)
