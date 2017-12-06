@@ -3,8 +3,10 @@
   "email": "aroy@alum.mit.edu",
   "github_username": "audreyr",
   "project_name": "Python Boilerplate",
-  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '').replace('-', '').replace('_', '') }}",
-  "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+  "project_slug":
+    "{{ cookiecutter.project_name.lower().replace(' ', '').replace('-', '').replace('_', '') }}",
+  "project_short_description":
+    "Python Boilerplate contains all the boilerplate you need to create a Python package.",
   "pypi_username": "{{ cookiecutter.github_username }}",
   "version": "0.1.0",
   "use_pytest": "y",
@@ -21,7 +23,8 @@
     "LGPL-3.0",
     "GPL-2.0",
     "GPL-3.0",
-    "Not open source"],
+    "Not open source"
+  ],
   "_template_url": "https://github.com/starofrainnight/rtpl-pypackage",
   "_extensions": ["jinja2_pimport.PImportExtension"]
 }
