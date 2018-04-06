@@ -1,6 +1,6 @@
 {
-  "full_name": "Audrey Roy Greenfeld",
-  "email": "aroy@alum.mit.edu",
+  "full_name": "{{ ('subprocess'|pimport).check_output('git config --global user.name', shell=True).strip().decode() }}",
+  "email": "{{ ('subprocess'|pimport).check_output('git config --global user.email', shell=True).strip().decode() }}",
   "github_username": "audreyr",
   "project_name": "Python Boilerplate",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '').replace('-', '').replace('_', '') }}",
