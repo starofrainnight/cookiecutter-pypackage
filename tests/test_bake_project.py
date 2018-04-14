@@ -173,7 +173,7 @@ def test_using_pytest(cookies):
 
 
 def test_bake_with_no_console_script(cookies):
-    context = {'command_line_interface': "No command-line interface"}
+    context = {'command_line_interface': "NO_COMMAND_LINE"}
     result = cookies.bake(extra_context=context)
     project_path, project_slug, project_dir = project_info(result)
     found_project_files = os.listdir(project_dir)

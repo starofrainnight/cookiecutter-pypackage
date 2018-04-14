@@ -29,7 +29,7 @@ test_requirements = [
     # TODO: put package test requirements here
 ]
 
-{%- if cookiecutter.license != "Not open source" %}
+{%- if cookiecutter.license != "NOT_OPEN_SOURCE" %}
     {%- set license = ('license' | pimport).find(cookiecutter.license) %}
 {%- endif %}
 
