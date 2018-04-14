@@ -3,7 +3,7 @@
   "email": "{{ ('subprocess'|pimport).check_output('git config --global user.email', shell=True).strip().decode() }}",
   "username": "{{ cookiecutter.email.split('@')[0].strip() }}",
   "github_username": "{{ cookiecutter.username }}",
-  "project_name": "Python Boilerplate",
+  "project_name": "RTPL_PYPACKAGE_PROJECT_NAME",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '').replace('-', '').replace('_', '') }}",
   "project_short_description": "RTPL_PYPACKAGE_PROJECT_SHORT_DESCRIPTION",
   "pypi_username": "{{ cookiecutter.username }}",
