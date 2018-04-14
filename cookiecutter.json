@@ -5,7 +5,7 @@
   "github_username": "{{ cookiecutter.username }}",
   "project_name": "Python Boilerplate",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '').replace('-', '').replace('_', '') }}",
-  "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+  "project_short_description": "RTPL_PYPACKAGE_PROJECT_SHORT_DESCRIPTION",
   "pypi_username": "{{ cookiecutter.username }}",
   "version": "0.0.1",
   "use_pytest": "y",
