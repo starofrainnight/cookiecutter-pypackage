@@ -8,21 +8,21 @@ from setuptools import setup, find_packages
 with open('README.rst') as readme_file, open('HISTORY.rst') as history_file:
     long_description = (readme_file.read() + "\n\n" + history_file.read())
 
-requirements = [
+install_requires = [
     {%- if cookiecutter.command_line_interface|lower == 'click' %}
     'click>=6.0',
     {%- endif %}
     # TODO: put package requirements here
 ]
 
-setup_requirements = [
+setup_requires = [
 {%- if cookiecutter.use_pytest == 'y' %}
     'pytest-runner',
 {%- endif %}
     # TODO({{ cookiecutter.github_username }}): put setup requirements (distutils extensions, etc.) here
 ]
 
-test_requirements = [
+tests_requires = [
 {%- if cookiecutter.use_pytest == 'y' %}
     'pytest',
 {%- endif %}
@@ -50,7 +50,7 @@ setup(
     },
     {%- endif %}
     include_package_data=True,
-    install_requires=requirements,
+    install_requires=install_requires,
     {%- if license is defined %}
     license="{{ license.python.split(':')[-1].strip() }}",
     {%- endif %}
@@ -68,6 +68,6 @@ setup(
         'Programming Language :: Python :: 3.5',
     ],
     test_suite='tests',
-    tests_require=test_requirements,
-    setup_requires=setup_requirements,
+    tests_require=tests_requires,
+    setup_requires=setup_requires,
 )
