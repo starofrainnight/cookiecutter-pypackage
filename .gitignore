@@ -91,9 +91,22 @@ docs/_build/
 # PyBuilder
 target/
 
+# pyenv python configuration file
+.python-version
+
 # Cookiecutter
 output/
 python_boilerplate/
 
 # Ignore vscode stuffs
 .vscode/
+
+# Ignore mypy stuffs
+.mypy_cache
+
+# coverage generated files
+htmlcov/
+.coverage
+
+# pytest
+.pytest_cache
