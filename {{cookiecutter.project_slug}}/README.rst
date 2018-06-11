@@ -10,6 +10,9 @@
 .. image:: https://img.shields.io/travis/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.svg
         :target: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
 
+.. image:: https://ci.appveyor.com/api/projects/status/BADGE-ID?svg=true
+        :target: https://ci.appveyor.com/project/starofrainnight/{{ cookiecutter.project_slug }}
+
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.project_slug | replace("_", "-") }}/badge/?version=latest
         :target: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
