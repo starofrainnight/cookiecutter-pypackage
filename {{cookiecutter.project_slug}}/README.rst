@@ -13,9 +13,6 @@
 .. image:: https://ci.appveyor.com/api/projects/status/BADGE-ID?svg=true
         :target: https://ci.appveyor.com/project/starofrainnight/{{ cookiecutter.project_slug }}
 
-.. image:: https://readthedocs.org/projects/{{ cookiecutter.project_slug | replace("_", "-") }}/badge/?version=latest
-        :target: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
 {%- endif %}
 
 .. image:: https://pyup.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/shield.svg
