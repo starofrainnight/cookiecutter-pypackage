@@ -5,13 +5,13 @@
 
 {% if is_open_source %}
 .. image:: https://img.shields.io/pypi/v/{{ cookiecutter.project_name }}.svg
-        :target: https://pypi.python.org/pypi/{{ cookiecutter.project_name }}
+    :target: https://pypi.python.org/pypi/{{ cookiecutter.project_name }}
 
-.. image:: https://img.shields.io/travis/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.svg
-        :target: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
+.. image:: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.svg
+    :target: https://travis-ci.org/starofrainnight/rabird.html
 
 .. image:: https://ci.appveyor.com/api/projects/status/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}?svg=true
-        :target: https://ci.appveyor.com/project/starofrainnight/{{ cookiecutter.project_slug }}
+    :target: https://ci.appveyor.com/project/starofrainnight/{{ cookiecutter.project_slug }}
 
 {%- endif %}
 
