@@ -10,7 +10,7 @@
 .. image:: https://img.shields.io/travis/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.svg
         :target: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
 
-.. image:: https://ci.appveyor.com/api/projects/status/BADGE-ID?svg=true
+.. image:: https://ci.appveyor.com/api/projects/status/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}?svg=true
         :target: https://ci.appveyor.com/project/starofrainnight/{{ cookiecutter.project_slug }}
 
 {%- endif %}
