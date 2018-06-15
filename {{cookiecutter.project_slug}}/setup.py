@@ -58,7 +58,7 @@ setup(
     license="{{ license.python.split(':')[-1].strip() }}",
     {%- endif %}
     zip_safe=False,
-    keywords='{{ cookiecutter.project_slug }}',
+    keywords='{{ cookiecutter.project_slug }},{{ cookiecutter.project_short_name }}',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
