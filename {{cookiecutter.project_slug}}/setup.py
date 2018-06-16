@@ -43,12 +43,12 @@ setup(
     long_description=long_description,
     author="{{ cookiecutter.full_name.replace('\"', '\\\"') }}",
     author_email='{{ cookiecutter.email }}',
-    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
+    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_short_name }}',
     packages=find_packages(),
     {%- if 'no' not in cookiecutter.command_line_interface|lower %}
     entry_points={
         'console_scripts': [
-            '{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}.__main__:main'
+            '{{ cookiecutter.project_short_name }}={{ cookiecutter.project_slug }}.__main__:main'
         ]
     },
     {%- endif %}

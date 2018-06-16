@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Tests for `{{ cookiecutter.project_slug }}` package."""
+"""Tests for `{{ cookiecutter.project_short_name }}` package."""
 
 {% if cookiecutter.use_pytest == 'y' -%}
 import pytest
@@ -50,7 +50,7 @@ def test_command_line_interface():
 
 
 class Test{{ cookiecutter.project_slug|title }}(unittest.TestCase):
-    """Tests for `{{ cookiecutter.project_slug }}` package."""
+    """Tests for `{{ cookiecutter.project_short_name }}` package."""
 
     def setUp(self):
         """Set up test fixtures, if any."""

@@ -31,6 +31,6 @@ deploy:
     secure: PLEASE_REPLACE_ME
   on:
     tags: true
-    repo: {{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
+    repo: {{ cookiecutter.github_username }}/{{ cookiecutter.project_short_name }}
     python: 3.6
 {%- endif %}

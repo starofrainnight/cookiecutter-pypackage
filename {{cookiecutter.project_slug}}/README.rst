@@ -7,11 +7,11 @@
 .. image:: https://img.shields.io/pypi/v/{{ cookiecutter.project_short_name }}.svg
     :target: https://pypi.python.org/pypi/{{ cookiecutter.project_short_name }}
 
-.. image:: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.svg
-    :target: https://travis-ci.org/starofrainnight/rabird.html
+.. image:: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_short_name }}.svg
+    :target: https://travis-ci.org/starofrainnight/{{ cookiecutter.project_short_name }}.html
 
-.. image:: https://ci.appveyor.com/api/projects/status/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}?svg=true
-    :target: https://ci.appveyor.com/project/starofrainnight/{{ cookiecutter.project_slug }}
+.. image:: https://ci.appveyor.com/api/projects/status/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_short_name }}?svg=true
+    :target: https://ci.appveyor.com/project/starofrainnight/{{ cookiecutter.project_short_name }}
 
 {%- endif %}
 
@@ -19,7 +19,7 @@
 
 {% if is_open_source %}
 * License: {{ cookiecutter.license }}
-* Documentation: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io.
+* Documentation: https://{{ cookiecutter.project_short_name | replace("_", "-") }}.readthedocs.io.
 {% endif %}
 
 Features
