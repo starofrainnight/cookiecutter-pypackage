@@ -7,32 +7,32 @@ environment:
     - PYTHON: "C:\\Python34"
       PYTHON_VERSION: "3.4.x"
       PYTHON_ARCH: "32"
-      TOX_ENV: "py34"
+      TOXENV: "py34"
 
     - PYTHON: "C:\\Python34-x64"
       PYTHON_VERSION: "3.4.x"
       PYTHON_ARCH: "64"
-      TOX_ENV: "py34"
+      TOXENV: "py34"
 
     - PYTHON: "C:\\Python35"
       PYTHON_VERSION: "3.5.x"
       PYTHON_ARCH: "32"
-      TOX_ENV: "py35"
+      TOXENV: "py35"
 
     - PYTHON: "C:\\Python35-x64"
       PYTHON_VERSION: "3.5.x"
       PYTHON_ARCH: "64"
-      TOX_ENV: "py35"
+      TOXENV: "py35"
 
     - PYTHON: "C:\\Python36"
       PYTHON_VERSION: "3.6.x"
       PYTHON_ARCH: "32"
-      TOX_ENV: "py36"
+      TOXENV: "py36"
 
     - PYTHON: "C:\\Python36-x64"
       PYTHON_VERSION: "3.6.x"
       PYTHON_ARCH: "64"
-      TOX_ENV: "py36"
+      TOXENV: "py36"
 
 install:
   # If there is a newer build queued for the same PR, cancel this one.
@@ -75,7 +75,7 @@ build: off
 
 test_script:
   # Run the project tests
-  - "tox -e %TOX_ENV%"
+  - "tox"
 
 after_test:
   # If tests are successful, create binary packages for the project.
