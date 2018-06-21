@@ -41,10 +41,10 @@ def test(env):
             run_path("setup.py test")
         elif env == 'mypy':
             run_module("pip install mypy")
-            run_module("mypy -m rabird.qt --ignore-missing-imports")
+            run_module("mypy -m {{ cookiecutter.project_slug }} --ignore-missing-imports")
         elif env == 'flake8':
             run_module("pip install flake8")
-            run_module("flake8 rabird.qt")
+            run_module("flake8 {{ cookiecutter.project_slug }}")
 
 
 @main.command()
