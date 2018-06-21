@@ -12,6 +12,14 @@ environment:
     # a later point release.
     # See: http://www.appveyor.com/docs/installed-software#python
 
+{%- if cookiecutter.support_python27 == 'y' %}
+    - PYTHON: "C:\\Python27"
+      PYTHON_VERSION: "2.7.x"
+{%- else %}
+    # - PYTHON: "C:\\Python27"
+    #   PYTHON_VERSION: "2.7.x"
+{%- endif %}
+
     - PYTHON: "C:\\Python34"
       PYTHON_VERSION: "3.4.x"
 

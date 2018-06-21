@@ -3,6 +3,11 @@ language: python
 
 matrix:
   include:
+{%- if cookiecutter.support_python27 == 'y' %}
+    - python: 2.7
+{%- else %}
+    # - python: 2.7
+{%- endif %}
     - python: 3.4
     - python: 3.5
     - python: 3.6

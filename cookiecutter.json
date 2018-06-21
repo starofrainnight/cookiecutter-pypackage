@@ -11,6 +11,7 @@
   "version": "0.0.1",
   "use_pytest": "y",
   "use_pypi_deployment_with_travis": "y",
+  "support_python27": "n",
   "command_line_interface": [
     "Click",
     "NO_COMMAND_LINE"
