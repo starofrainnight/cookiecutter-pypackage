@@ -3,7 +3,6 @@ bumpversion
 wheel
 watchdog
 flake8
-tox
 coverage
 Sphinx
 {% if cookiecutter.use_pypi_deployment_with_travis == 'y' -%}
