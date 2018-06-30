@@ -26,9 +26,6 @@ tests_requires = [
 {%- if cookiecutter.use_pytest == 'y' %}
     'pytest',
 {%- endif %}
-{%- if cookiecutter.command_line_interface|lower == 'click' %}
-    'click>=6.0',
-{%- endif %}
     # TODO: put package test requirements here
 ]
 
