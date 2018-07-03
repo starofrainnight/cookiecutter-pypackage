@@ -63,7 +63,6 @@ setup(
         {%- if license is defined %}
         '{{ license.python }}',
         {%- endif %}
-        'Natural Language :: English',
         {%- if cookiecutter.support_python27 == 'y' %}
         'Programming Language :: Python :: 2.7',
         {%- endif %}
