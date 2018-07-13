@@ -18,5 +18,5 @@ if __name__ == '__main__':
             '{{ cookiecutter.project_slug }}', '__main__.py')
         remove_file(cli_file)
 
-    if 'Not open source' == '{{ cookiecutter.license }}':
+    if 'NOT_OPEN_SOURCE' == '{{ cookiecutter.license }}':
         remove_file('LICENSE')
