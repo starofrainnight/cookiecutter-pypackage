@@ -3,11 +3,11 @@
   "email": "{{ ('subprocess'|pimport).check_output('git config --global user.email', shell=True).strip().decode() }}",
   "username": "{{ cookiecutter.email.split('@')[0].strip() }}",
   "github_username": "{{ cookiecutter.username }}",
+  "pypi_username": "{{ cookiecutter.username }}",
   "project_name": "RTPL_PYPACKAGE_PROJECT_NAME",
   "project_short_name": "{{ cookiecutter.project_name.replace(' ', '') }}",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '').replace('-', '').replace('_', '') }}",
   "project_short_description": "RTPL_PYPACKAGE_PROJECT_SHORT_DESCRIPTION",
-  "pypi_username": "{{ cookiecutter.username }}",
   "version": "0.0.1",
   "use_pytest": "y",
   "use_pypi_deployment_with_travis": "y",
@@ -29,6 +29,10 @@
     "GPL-3.0",
     "NOT_OPEN_SOURCE"
   ],
+  "BELOW_VARIABLES_NOT_NEEDS_INPUT": "Next variables are generated automaticly, just skip them!",
+  "project_is_namespace_package": "{{ 'y' if ('.' in cookiecutter.project_name) else 'n' }}",
+  "project_ns_namespace": "{{ cookiecutter.project_slug.split('.')[0] if 'y' in cookiecutter.project_is_namespace_package else '' }}",
+  "project_ns_package": "{{ cookiecutter.project_slug.split('.')[1] if 'y' in cookiecutter.project_is_namespace_package else cookiecutter.project_slug }}",
   "_template_url": "https://github.com/starofrainnight/rtpl-pypackage",
   "_extensions": [
     "jinja2_pimport.PImportExtension"
