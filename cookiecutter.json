@@ -33,6 +33,7 @@
   "project_is_namespace_package": "{{ 'y' if ('.' in cookiecutter.project_name) else 'n' }}",
   "project_ns_namespace": "{{ cookiecutter.project_slug.split('.')[0] if 'y' in cookiecutter.project_is_namespace_package else '' }}",
   "project_ns_package": "{{ cookiecutter.project_slug.split('.')[1] if 'y' in cookiecutter.project_is_namespace_package else cookiecutter.project_slug }}",
+  "project_test_name": "{{ cookiecutter.project_slug.replace('.', '_') }}",
   "_template_url": "https://github.com/starofrainnight/rtpl-pypackage",
   "_extensions": [
     "jinja2_pimport.PImportExtension"
