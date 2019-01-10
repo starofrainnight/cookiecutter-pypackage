@@ -44,7 +44,7 @@ def test(env):
             run_module("mypy -m {{ cookiecutter.project_slug }} --ignore-missing-imports")
         elif env == 'flake8':
             run_module("pip install flake8")
-            run_module("flake8 {{ cookiecutter.project_slug }} tests")
+            run_module("flake8 --max-line-length=80 {{ cookiecutter.project_slug }} tests")
 
 
 @main.command()
