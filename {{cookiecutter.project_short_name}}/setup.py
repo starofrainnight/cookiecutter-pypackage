@@ -38,7 +38,7 @@ tests_requires = [
 
 setup(
     name='{{ cookiecutter.project_short_name }}',
-    version='{{ cookiecutter.version }}',
+    version="{{ cookiecutter.version }}",
     description="{{ cookiecutter.project_short_description }}",
     long_description=long_description,
     author="{{ cookiecutter.full_name.replace('\"', '\\\"') }}",
