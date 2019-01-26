@@ -14,3 +14,4 @@ pytest-runner{% endif %}
 {%- if cookiecutter.command_line_interface|lower == 'click' %}
 click
 {%- endif %}
+pre-commit
