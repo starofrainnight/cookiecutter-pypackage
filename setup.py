@@ -5,7 +5,7 @@ from setuptools import setup
 setup(
     name='cookiecutter-pypackage',
     packages=[],
-    version='0.3.0',
+    version='0.3.1',
     description='Cookiecutter template for a Python package',
     author='Hong-She Liang',
     license='BSD',
