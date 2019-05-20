@@ -8,9 +8,9 @@ matrix:
 {%- else %}
     # - python: 2.7
 {%- endif %}
-    - python: 3.4
     - python: 3.5
     - python: 3.6
+    - python: 3.7
 
 # command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install:
