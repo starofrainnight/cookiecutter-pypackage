@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(
-    name='cookiecutter-pypackage',
+    name='rtpl-pypackage',
     packages=[],
     version='0.3.1',
     description='Cookiecutter template for a Python package',
