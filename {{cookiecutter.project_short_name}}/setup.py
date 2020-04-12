@@ -33,7 +33,7 @@ tests_requires = [
 ]
 
 {%- if cookiecutter.license != "NOT_OPEN_SOURCE" %}
-    {%- set license = ('license' | pimport).find(cookiecutter.license) %}
+    {%- set license = ('licenraptor' | pimport).find(cookiecutter.license) %}
 {%- endif %}
 
 setup(
